@@ -9,7 +9,12 @@ detector = MTCNN()
 # image_path = 'IMG_5749.jpg'
 # image_path = 'IMG_5098.jpg'
 # image_path = 'IMG_5142.jpg'
-image_path = 'image_97_2.png'
+# image_path = 'image_97_2.png'
+# image_path = 'image_99_2.png'
+# image_path = 'image_108_3.png'
+# image_path = 'image_109_2.png'
+# image_path = 'image_144_2.png'
+image_path = 'image_345_3.png'
 
 img = cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB)
 
