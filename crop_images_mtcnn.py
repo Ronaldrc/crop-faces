@@ -33,6 +33,7 @@ copy_image = cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB)
 for i, face in enumerate(faces):
     # Get the bounding box
     x, y, width, height = face['box']
+    print(face['keypoints']) # DELETE ME
     # Draw rectangle around the face
     cv2.rectangle(copy_image, (x, y), (x+width, y+height), (255, 0, 0), 1)
 
