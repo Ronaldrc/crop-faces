@@ -6,14 +6,18 @@ import os
 detector = MTCNN()
 
 # Load your image
-image_path = 'IMG_5749.jpg'
+# image_path = 'IMG_5749.jpg'
+# image_path = 'IMG_5098.jpg'
+# image_path = 'IMG_5142.jpg'
+image_path = 'image_97_2.png'
+
 img = cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB)
 
 # Detect faces
 faces = detector.detect_faces(img)
 
 # Directory to save cropped faces
-save_dir = 'cropped/cropped_faces'
+save_dir = 'cropped/'
 os.makedirs(save_dir, exist_ok=True)
 
 # Process each detected face
